@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import '../index.css';
 
-function SingleButton() {
+function SingleButton(props) {
   return (
     <button className="square" type="button">
-      Click
+      {props.value}
     </button>
   );
 }

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="container">
       <h1>Basic  Calculator</h1>
-      <Result value={0} />
+      <Result value="0" />
       <DialPad />
     </div>
   );
