@@ -1,7 +1,19 @@
+body {
+  background-image: url("./calc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+
+h1 {
+  color: white;
+}
+
 h2 {
   width: 380px;
   text-align: right;
-  height: 50px;
+  height: 40px;
   background-color: honeydew;
   padding: 10px;
 }
@@ -9,8 +21,14 @@ h2 {
 .container {
   width: 400px;
   margin: auto;
-  border: 1px solid gray;
+  padding: 5px;
+  margin-top: 50px;
   text-align: center;
+  border-radius: 30px;
+  background-color: rgb(99, 46, 11);
+  border: 2px solid;
+  border-image-source: linear-gradient(to right, red, orange);
+  border-image-slice: 1;
 }
 
 .board-row {
@@ -18,9 +36,16 @@ h2 {
   flex-direction: row;
 }
 
-.board-row button {
+button {
   width: 100px;
-  height: 80px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: 2px;
+}
+
+button:hover {
+  color: white;
 }
 
 .board-row span button {
