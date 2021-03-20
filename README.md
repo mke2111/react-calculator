@@ -21,16 +21,16 @@ To try the live demo [click here](https://ccalculatorr.herokuapp.com/)
 
 To use this app locally, this is what you need to:
 
-- [Download](hhttps://github.com/mke2111/calculator.git) or clone this repo:
+- [Download](https://github.com/mke2111/react-calculator.git) or clone this repo:
 
   - Clone with HTTPS in the terminal.
 
   ```
-    git clone https://github.com/mke2111/calculator.git
+    git clone https://github.com/mke2111/react-calculator.git
 
   ```
 
-- Then `cd calculator` into the downloaded folder and run `npm install`
+- Then `cd react-calculator` into the downloaded folder and run `npm install`
 - then, run `npm run start`.
 
 ### Built With
