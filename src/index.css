@@ -46,6 +46,8 @@ button {
 
 button:hover {
   color: white;
+  cursor: pointer;
+  border: 1px solid red;
 }
 
 .board-row span button {
