@@ -8,6 +8,8 @@ body {
 
 h1 {
   color: white;
+  font-family: monospace;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -22,13 +24,14 @@ h2 {
   width: 400px;
   margin: auto;
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 3px;
   background-color: rgb(99, 46, 11);
   border: 2px solid;
   border-image-source: linear-gradient(to right, red, orange);
   border-image-slice: 1;
+  height: 65vh;
 }
 
 .board-row {
