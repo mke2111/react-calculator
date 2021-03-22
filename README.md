@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <p align='center' class='d-flex'>
   <!-- ![screenshot](./Screenshot.png) -->
     <span align="">
-    <img  title='wave' alt='waving' src='./Screenshot.png'>
+    <img  title='wave' alt='waving' src='./calcu.png'>
   </span>
 </p>
 

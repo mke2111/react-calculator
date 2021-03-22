@@ -2,6 +2,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import '../index.css';
+import PropTypes from 'prop-types';
 
 function Result(props) {
   return (
@@ -12,7 +13,7 @@ function Result(props) {
 }
 
 Result.defaultProps = {
-  value: '0',
+  value: PropTypes.string.isRequired,
 };
 
 export default Result;
