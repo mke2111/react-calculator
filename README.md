@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Version
 
-To try the live demo [click here](https://ccalculatorr.herokuapp.com/)
+To try the live demo [click here](https://rcalculatorr.herokuapp.com/)
 
 ## About The Project
 
