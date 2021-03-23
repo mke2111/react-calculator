@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
 /* eslint-disable no-unused-expressions */
-import operate from './operate';
+import operate from './Operate';
 
 const calculate = (calculatorInput, buttonName) => {
   let { total, next, operation } = calculatorInput;
