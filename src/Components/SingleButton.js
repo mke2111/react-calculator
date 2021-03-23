@@ -2,7 +2,6 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import '../index.css';
-import PropTypes from 'prop-types';
 
 function SingleButton(props) {
   return (
@@ -13,7 +12,7 @@ function SingleButton(props) {
 }
 
 SingleButton.propType = {
-  name: PropTypes.string,
+  name: 0,
 };
 
 export default SingleButton;
