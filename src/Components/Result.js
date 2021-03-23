@@ -13,7 +13,11 @@ function Result(props) {
 }
 
 Result.defaultProps = {
-  value: PropTypes.string.isRequired,
+  value: 0,
+};
+
+Result.propTypes = {
+  value: PropTypes.number,
 };
 
 export default Result;

@@ -1,37 +1,38 @@
 import React from 'react';
 import '../index.css';
+import SingleButton from './SingleButton';
 
 function DialPad() {
   return (
     <div>
       <div className="board-row">
-        <button type="button">AC</button>
-        <button type="button">+/-</button>
-        <button type="button">%</button>
-        <button type="button" className="operation">/</button>
+        <SingleButton name="AC" />
+        <SingleButton name="+" />
+        <SingleButton name="%" />
+        <SingleButton name="/" className="operation" />
       </div>
       <div className="board-row">
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button" className="operation">*</button>
+        <SingleButton name="7" />
+        <SingleButton name="8" />
+        <SingleButton name="9" />
+        <SingleButton name="*" className="operation" />
       </div>
       <div className="board-row">
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button" className="operation">-</button>
+        <SingleButton name="4" />
+        <SingleButton name="5" />
+        <SingleButton name="6" />
+        <SingleButton name="-" className="operation" />
       </div>
       <div className="board-row">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button" className="operation">+</button>
+        <SingleButton name="1" />
+        <SingleButton name="2" />
+        <SingleButton name="3" />
+        <SingleButton name="+" className="operation" />
       </div>
       <div className="board-row">
-        <span><button type="button">0</button></span>
-        <button type="button">.</button>
-        <button type="button" className="operation">=</button>
+        <span><SingleButton name="0" /></span>
+        <SingleButton name="." />
+        <SingleButton name="=" className="operation" />
       </div>
     </div>
   );
