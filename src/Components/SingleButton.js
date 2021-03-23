@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 function SingleButton(props) {
   return (
-    <button className="square" type="button">
+    <button className="square" type="button" onClick={() => { alert('hdjbkjsckjdc'); }}>
       {props.name}
     </button>
   );
