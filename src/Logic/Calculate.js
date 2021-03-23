@@ -7,8 +7,8 @@ const calculate = (calculatorInput, buttonName) => {
 
   switch (buttonName) {
     case '+':
-    case '-':
     case '*':
+    case '-':
     case '/':
       if (total !== null) {
         operation = buttonName;
