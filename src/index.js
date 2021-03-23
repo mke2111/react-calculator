@@ -1,13 +1,11 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import './index.css';
-import Display from './Display';
+import App from './Components/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Display />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
