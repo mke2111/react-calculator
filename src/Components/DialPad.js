@@ -1,7 +1,9 @@
 import React from 'react';
 import '../index.css';
+import PropTypes from 'prop-types';
 import SingleButton from './SingleButton';
 
+// eslint-disable-next-line react/prop-types
 function DialPad({ clickHandler }) {
   return (
     <div>
@@ -37,5 +39,9 @@ function DialPad({ clickHandler }) {
     </div>
   );
 }
+
+DialPad.prototypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default DialPad;
