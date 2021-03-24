@@ -10,11 +10,25 @@ const App = () => {
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
 
+  const handleClick = buttonName => {
+    const result = calculate(
+      {
+        total,
+        next,
+        operation,
+      },
+      buttonName,
+    );
+    setTotal(result.total);
+    setNext(result.next);
+    setOperation(result.operation);
+  };
+
   return (
     <div className="container">
       <h1>Basic  Calculator</h1>
-      <Result value="0" />
-      <DialPad />
+      <Result result={total} next={next} />
+      <DialPad clickHandler={handleClick} />
     </div>
   );
 };
