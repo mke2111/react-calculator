@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import DialPad from './DialPad';
 import Result from './Result';
