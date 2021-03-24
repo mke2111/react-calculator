@@ -32,7 +32,7 @@ function DialPad({ clickHandler }) {
         <SingleButton name="+" clickHandler={() => clickHandler('+')} className="operation" />
       </div>
       <div className="board-row">
-        <span><SingleButton name="0" /></span>
+        <span><SingleButton name="0" clickHandler={() => clickHandler('0')} /></span>
         <SingleButton name="." clickHandler={() => clickHandler('.')} />
         <SingleButton name="=" clickHandler={() => clickHandler('=')} className="operation" />
       </div>
