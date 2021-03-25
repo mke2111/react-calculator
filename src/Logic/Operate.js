@@ -16,7 +16,7 @@ const operate = (firstNumber, secondNumber, operation) => {
       total = first.times(second);
       break;
     case '/':
-      total = secondNumber === 0 ? 'Math Error' : first.div(second);
+      total = secondNumber === '0' ? 'Math Error' : first.div(second);
       break;
     case '%':
       total = first.mod(second);
