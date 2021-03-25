@@ -2,10 +2,10 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React from 'react';
-import DialPad from './DialPad';
-import Result from './Result';
-import '../index.css';
-import calculate from '../Logic/Calculate';
+import DialPad from './Components/DialPad';
+import Result from './Components/Result';
+import './index.css';
+import calculate from './Logic/Calculate';
 
 class App extends React.Component {
   constructor(props) {
