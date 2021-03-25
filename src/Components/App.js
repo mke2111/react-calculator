@@ -1,3 +1,5 @@
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
 // import React, { useState } from 'react';
 import React from 'react';
 import DialPad from './DialPad';
@@ -49,7 +51,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <h1>Basic  Calculator</h1>
-        <Result result={this.state.total || this.state.next} />
+        <Result result={this.state.total} next={this.state.next} />
         <DialPad clickHandler={this.handleClick} />
       </div>
     );
