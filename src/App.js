@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import DialPad from './Components/DialPad';
+import Result from './Components/Result';
+import './index.css';
+import calculate from './Logic/Calculate';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleClick = buttonName => this.setState(calculate(this.state, buttonName));
+
+  render() {
+    return (
+      <div className="container">
+        <h1>Basic  Calculator</h1>
+        <Result result={this.state.total} next={this.state.next} operation={this.state.operation} />
+        <DialPad clickHandler={this.handleClick} />
+      </div>
+    );
+  }
 }
 
 export default App;
