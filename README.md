@@ -15,7 +15,7 @@ To try the live demo [click here](https://rcalculatorr.herokuapp.com/)
 
 ## About The Project
 
-> React - Calculator is a practice project, Built with React, JavaScript, CSS3.
+> React - Calculator is a practice project, Built with React, JavaScript, CSS3. The use of class and functional components, state management, passing props have all been applied in the project.
 
 ## Installation
 

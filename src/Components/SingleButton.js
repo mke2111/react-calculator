@@ -1,19 +1,21 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import '../index.css';
 import PropTypes from 'prop-types';
 
-function SingleButton(props) {
+function SingleButton({ name, clickHandler }) {
   return (
-    <button className="square" type="button" onClick={() => { alert('hdjbkjsckjdc'); }}>
-      {props.name}
-    </button>
+    <button type="button" onClick={clickHandler}>{ name }</button>
   );
 }
 
-SingleButton.propType = {
-  name: PropTypes.string.isRequired,
+SingleButton.propTypes = {
+  name: PropTypes.string,
+  clickHandler: PropTypes.func,
+};
+
+SingleButton.defaultProps = {
+  name: '',
+  clickHandler: () => '',
 };
 
 export default SingleButton;

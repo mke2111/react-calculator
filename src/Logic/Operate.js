@@ -1,4 +1,4 @@
-import Big from 'big';
+import Big from 'big.js';
 
 const operate = (firstNumber, secondNumber, operation) => {
   let total;
@@ -16,10 +16,14 @@ const operate = (firstNumber, secondNumber, operation) => {
       total = first.times(second);
       break;
     case '/':
-      total = secondNumber === 0 ? 'Math Error' : first.div(second);
+      total = secondNumber === '0' ? 'Math Error' : first.div(second);
       break;
     case '%':
-      total = first.mod(second);
+      if (second !== null) {
+        total = first.plus(second.div(100));
+      } else {
+        total = first.mod(second);
+      }
       break;
     default:
       throw Error('Unknown operation!');
