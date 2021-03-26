@@ -6,7 +6,7 @@ import SingleButton from './SingleButton';
 // eslint-disable-next-line react/prop-types
 function DialPad({ clickHandler }) {
   return (
-    <div>
+    <>
       <div className="board-row">
         <SingleButton name="AC" clickHandler={() => clickHandler('AC')} />
         <SingleButton name="+/-" clickHandler={() => clickHandler('+/-')} />
@@ -36,7 +36,7 @@ function DialPad({ clickHandler }) {
         <SingleButton name="." clickHandler={() => clickHandler('.')} />
         <SingleButton name="=" clickHandler={() => clickHandler('=')} className="operation" />
       </div>
-    </div>
+    </>
   );
 }
 

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 function Result({ result, next, operation }) {
   return (
-    <div>
+    <>
       <h2>{ next || operation || result || '0' }</h2>
-    </div>
+    </>
   );
 }
 
