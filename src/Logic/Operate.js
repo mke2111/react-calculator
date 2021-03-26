@@ -19,7 +19,11 @@ const operate = (firstNumber, secondNumber, operation) => {
       total = secondNumber === '0' ? 'Math Error' : first.div(second);
       break;
     case '%':
-      total = first.mod(second);
+      if (second !== null) {
+        total = first.plus(second.div(100));
+      } else {
+        total = first.mod(second);
+      }
       break;
     default:
       throw Error('Unknown operation!');
