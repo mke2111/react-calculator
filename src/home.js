@@ -1,6 +1,6 @@
 import React from "react";
 
-const Profile = () => {
+const Home = () => {
   return (
     <>
       <h1>Welcome to the simple calculator</h1>
@@ -11,4 +11,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Home;
