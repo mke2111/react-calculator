@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: luminosity;
+  height: 90vh;
 }
 
 h1 {
@@ -59,4 +60,27 @@ button:hover {
 
 .operation {
   background-color: rgb(209, 149, 57);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: large;
+  font-weight: 800;
+  padding-top: 15px;
+  width: 350px;
+  margin: auto;
+}
+
+a,
+p {
+  color: white;
+}
+
+.midd {
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
 }
