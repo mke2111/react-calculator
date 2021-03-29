@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import App from "./App";
-import Profile from "./Profile";
+import Home from "./home";
+import Quote from "./quote";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/app" component={App} />
+        <Route exact path="/quote" component={Quote} />
+        <Route exact path="/home" component={Home} />
       </Switch>
     </BrowserRouter>
   );
