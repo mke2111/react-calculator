@@ -1,14 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const Home = () => {
-  return (
-    <>
-      <h1>Welcome to the simple calculator</h1>
-      <p>
-      	This is a simple calculator made with react. This project ensures proper user of routing in react
-      </p>
-    </>
-  );
-};
+const Home = () => <h1>Welcome to the simple react calculator</h1>;
 
 export default Home;
