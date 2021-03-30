@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the render of the Navbar page 1`] = `
+<div
+  className="nav"
+>
+  <a
+    href="./"
+  >
+    Home
+  </a>
+  <a
+    href="./App"
+  >
+    Calculator
+  </a>
+  <a
+    href="./quote"
+  >
+    Quotes
+  </a>
+</div>
+`;
